@@ -1,0 +1,36 @@
+/* 푸터 영역 스타일 */
+#footer {
+    height: 150px;
+    background-color: #111;
+    color: #888888;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#git {
+    width: 30px;
+}
+
+/* 반응형 - 스마트폰 */
+@media screen and (max-width: 767px) {
+    #footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #git {
+        width: 24px;
+    }
+}
+
+/* 반응형 - 태블릿 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #footer {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #git {
+        width: 28px;
+    }
+}
