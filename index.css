@@ -1,0 +1,245 @@
+/* 헤더 상단 */
+#top-head {
+    display: flex;
+    justify-content: space-between; /* 좌우 분리 */
+    align-items: center;
+    padding: 0 40px;
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+#baeklogo {
+    max-width: 250px;
+    height: auto;
+}
+
+header div span {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+    padding: 40px;
+    font-size: 20px;
+    color: black;
+}
+
+header ul li:hover {
+    color: rgb(140, 137, 137);
+}
+
+#back {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    opacity: 0.9;
+    display: block;
+}
+
+#disc {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* 이미지 컨테이너 */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px auto 0;
+    position: relative;
+}
+
+/* 이미지 + 텍스트 묶음 */
+.circle {
+    position: relative;
+    width: 450px;
+    height: 670px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+/* 회색 느낌을 주기 위해 이미지 opacity만 조절 */
+.info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6); /* 검은 반투명 배경 */
+    color: #fff;
+    padding: 16px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+
+#footer {
+    height: 150px;
+    background-color: #111;
+    color: #888888;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#bu {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#git {
+    width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    #top-head {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    header div span {
+        font-size: 18px;
+    }
+
+    ul.list1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .circle {
+        width: 90%;
+        height: auto;
+    }
+
+    #footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #git {
+        width: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #top-head {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+    }
+
+    .header-left {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    header div span {
+        font-size: 20px;
+    }
+
+    ul.list1 {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+
+    li {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    #container {
+        justify-content: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .circle {
+        width: 320px;
+        height: 500px;
+    }
+
+    #footer {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #git {
+        width: 28px;
+    }
+}

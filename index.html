@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
     <title>K-POP학과</title>
 </head>
+
 <body>
     <header>
         <div id="top-head">
-            <a href="./index.html"><img src="./백석대로고.png" alt="백석대 로고" id="logo"></a>
-            <span>K-pop학과</span>
-                <ul>
-                    <a href="./intro.html" target="_blank" id="lis"><li>학과소개</li></a>
-                    <a href="./info.html" target="_blank" id="lis"><li>학사안내</li></a>
-                    <a href="./board.html" target="_blank" id="lis"><li>게시판</li></a>
-                    <a href="./portal.html" target="_blank" id="lis"><li>K-pop광장포털</li></a>
-                </ul>
+            <div class="header-left">
+                <a href="./index.html" id="logo_a"><img src="./image/logo.png" alt="백석대 로고" id="logo"></a>
+                <span>K-pop학과</span>
+            </div>
+            <ul class="list1">
+                <a href="./intro.html" target="_blank" id="lis">
+                    <li>학과소개</li>
+                </a>
+                <a href="./info.html" target="_blank" id="lis">
+                    <li>학사안내</li>
+                </a>
+                <a href="./board.html" target="_blank" id="lis">
+                    <li>게시판</li>
+                </a>
+                <a href="./portal.html" target="_blank" id="lis">
+                    <li>K-pop광장포털</li>
+                </a>
+            </ul>
         </div>
     </header>
-    <div id="container">
-        <div class="circle"><img src="./공민지.webp"  id="공민지"></div>
-        <div class="circle"><img src="./윤딴딴.webp"  id="윤딴딴"></div>
-        <div class="circle"><img src="./팔로알토.webp" id="팔로알토" ></div>
-        <div class="circle"><img src="./이재환.webp"  id="이재환"></div>
+    <div id="center">
+        <div id="container">
+            <div class="circle"><img src="./image/공민지.webp" id="공민지"></div>
+            <div class="circle"><img src="./image/윤딴딴.webp" id="윤딴딴"></div>
+            <div class="circle"><img src="./image/팔로알토.webp" id="팔로알토"></div>
+            <div class="circle"><img src="./image/이재환.webp" id="이재환"></div>
+        </div>
+        <div>
+            <img src="./image/bud.png" id="bu">
+        </div>
     </div>
     <footer>
-        
+        <div id="footer">
+            백석대학교 UI/UX 프로그래밍<br>
+
+
+            백석대학교 컴퓨터공학부<br>
+            8조 : 강우람, 김석진<br>
+            <br>
+            <a href="https://github.com/baekbro/UIUX.git"><img src="./image/git.png" id="git"></a>
+        </div>
     </footer>
 </body>
+
 </html>
