@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop광장포털</title>
+    <style>
+        /* 기본 스타일 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Noto Sans KR", sans-serif; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* 헤더 */
+        #top-head { display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px; }
+        #logo { height: 50px; }
+        #top-head span { font-size: 1.5rem; font-weight: bold; }
+        #top-head ul { display: flex; gap: 15px; }
+        #top-head ul li { padding: 8px 12px; transition: background 0.3s; }
+        #top-head ul li:hover { background-color: #e0e0e0; }
+
+        /* 메인 container */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h1 { font-size: 2rem; margin-bottom: 20px; }
+        .section { margin-bottom: 40px; }
+        .grid { display: grid; gap: 20px; }
+
+        /* 섹션별 그리드 */
+        .news-feed .grid { grid-template-columns: 1fr; }
+        .resources .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        .events .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+        /* 카드 스타일 */
+        .card { background-color: #f0f0f0; padding: 20px; border-radius: 8px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+        .card p { font-size: 0.95rem; }
+
+        /* 푸터 */
+        footer { background-color: #222; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
+        footer p { font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div id="top-head">
+            <a href="./index.html"><img src="./백석대로고.png" alt="백석대 로고" id="logo"></a>
+            <span>K-pop학과</span>
+            <ul>
+                <a href="./intro.html" id="lis"><li>학과소개</li></a>
+                <a href="./info.html" id="lis"><li>학사안내</li></a>
+                <a href="./board.html" id="lis"><li>게시판</li></a>
+                <a href="./portal.html" id="lis"><li>K-pop광장포털</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 본문 컨텐츠 -->
+    <main class="container">
+        <h1>K-pop광장포털</h1>
+        <!-- 뉴스 피드 섹션 -->
+        <section class="section news-feed">
+            <h2>최신 뉴스</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>[뉴스] 신인 그룹 데뷔 소식</h3>
+                    <p>새롭게 선보이는 K-pop 신인 그룹의 데뷔 앨범 발매 일정과 프로모션 정보를 확인하세요.</p>
+                </div>
+                <div class="card">
+                    <h3>[뉴스] 글로벌 투어 안내</h3>
+                    <p>인기 아티스트의 해외 투어 일정과 티켓 예매 정보를 제공합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 유용한 리소스 섹션 -->
+        <section class="section resources">
+            <h2>유용한 리소스</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>공식 음원 사이트</h3>
+                    <p><a href="https://www.melon.com" target="_blank">Melon</a>, <a href="https://www.genie.co.kr" target="_blank">Genie</a></p>
+                </div>
+                <div class="card">
+                    <h3>아티스트 팬카페</h3>
+                    <p>ESK 팬카페, 블랙핑크 팬카페 등 주요 팬 커뮤니티 링크 모음.</p>
+                </div>
+                <div class="card">
+                    <h3>댄스 튜토리얼</h3>
+                    <p><a href="#">YouTube 댄스 튜토리얼 채널</a> 소개.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 이벤트 일정 섹션 -->
+        <section class="section events">
+            <h2>다가오는 이벤트</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>봄학기 공개 공연</h3>
+                    <p>2025-05-15 | 백석대 콘서트홀</p>
+                </div>
+                <div class="card">
+                    <h3>해외 교류 워크숍</h3>
+                    <p>2025-06-10 | 온라인 Zoom</p>
+                </div>
+                <div class="card">
+                    <h3>졸업 작품 전시</h3>
+                    <p>2025-07-01 ~ 2025-07-05 | 미술관 X</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2025 Baekseok University K-pop학과. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
