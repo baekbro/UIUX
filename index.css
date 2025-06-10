@@ -28,131 +28,6 @@ ul {
 }
 
 #disc {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: "Noto Sans KR", sans-serif;
-        line-height: 1.6;
-        color: #333;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    #back {
-        width: 80%;
-        height: auto;
-        margin: auto;
-        opacity: 0.9;
-        display: block;
-    }
-
-    #disc {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        color: white;
-        font-size: 2em;
-        text-align: center;
-    }
-
-    #container {
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #container::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .circle {
-        float: left;
-        width: 450px;
-        height: 670px;
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-
-    .circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all 0.3s ease;
-        border-radius: 10px;
-    }
-
-    .info-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        padding: 16px 20px;
-        font-size: 18px;
-        border-radius: 10px;
-        text-align: center;
-        line-height: 1.5;
-        white-space: nowrap;
-        z-index: 10;
-    }
-
-    #bu {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    @media screen and (max-width: 767px) {
-        #container {
-            padding: 10px;
-        }
-
-        .circle {
-            float: none;
-            width: 90%;
-            height: auto;
-            margin: 0 auto 40px;
-        }
-
-        #git {
-            width: 24px;
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-        #container {
-            padding: 10px;
-        }
-
-        .circle {
-            width: 320px;
-            height: 500px;
-        }
-
-        #git {
-            width: 28px;
-        }
-    }
-
     position: absolute;
     top: 20%;
     left: 50%;
@@ -163,24 +38,26 @@ ul {
     text-align: center;
 }
 
-/* 이미지 컨테이너 */
 #container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
     width: 100%;
     max-width: 1920px;
-    margin: 0px auto 0;
+    margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
-/* 이미지 + 텍스트 묶음 */
+#container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .circle {
-    position: relative;
+    float: left;
     width: 450px;
     height: 670px;
+    margin: 10px;
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -214,20 +91,16 @@ ul {
     margin-top: 40px;
 }
 
-
-
-/* 반응형 - 스마트폰 */
 @media screen and (max-width: 767px) {
     #container {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
         padding: 10px;
     }
 
     .circle {
+        float: none;
         width: 90%;
         height: auto;
+        margin: 0 auto 40px;
     }
 
     #git {
@@ -235,11 +108,8 @@ ul {
     }
 }
 
-/* 반응형 - 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #container {
-        justify-content: center;
-        gap: 30px;
         padding: 10px;
     }
 
