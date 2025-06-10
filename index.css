@@ -9,6 +9,7 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #fff;
 }
 
 a {
@@ -20,66 +21,75 @@ ul {
     list-style: none;
 }
 
-
-
-
-#bu {
-    width: 100%;
-    margin-top: 40px;
-}
-
-
-/* 컨테이너 */
 .container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
 }
 
+/* 타이틀 */
 h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 32px;
+    color: #004c99;
+    border-left: 8px solid #3399ff;
+    padding-left: 16px;
 }
 
 h2 {
+    font-size: 1.6rem;
+    margin: 32px 0 16px;
+    color: #0066cc;
+}
+
+h3 {
     font-size: 1.3rem;
-    margin: 20px 0 10px;
+    margin: 24px 0 12px;
+    color: #004080;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #333;
 }
 
-ul li {
-    margin-bottom: 8px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #f0f0f0;
-}
-
-/* 푸터 (불러오긴 하지만 안전하게 정의해두기) */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+/* 카드 스타일 섹션 */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
     margin-top: 40px;
 }
 
-footer p {
-    font-size: 0.9rem;
+.feature {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.2);
+}
+
+.feature h3 {
+    color: #0055aa;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* 강조 효과 */
+.highlight {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
