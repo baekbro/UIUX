@@ -98,6 +98,12 @@ ul {
     margin-top: 40px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+/* 반응형 - 스마트폰 */
+>>>>>>> 47bb6adf83035d055bcc82140191c9b60d0fc832
 @media screen and (max-width: 767px) {
     #container {
         padding: 10px;
