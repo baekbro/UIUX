@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop학과 소개</title>
     <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 공통 헤더 삽입 -->
+    <div id="header"></div>
+
+    <!-- 히어로 배너 -->
+    <section class="hero"></section>
+
+    <!-- 본문 컨텐츠 -->
+    <main class="container">
+        <!-- 학과 소개 -->
+        <section class="intro">
+            <h1>학과소개</h1>
+            <p>백석대학교 K-pop학과는 차세대 K-pop 아티스트와 전문가를 양성하기 위해 체계적인 커리큘럼과 실무 중심 교육을 제공합니다. 음악 이론, 보컬 트레이닝, 댄스, 퍼포먼스, 음향·조명 등
+                다양한 분야를 아우르며 글로벌 무대에서 활약할 수 있는 역량을 키웁니다.</p>
+        </section>
+
+        <!-- 핵심 특징 -->
+        <section class="features">
+            <div class="feature">
+                <h3>전문 강사진</h3>
+                <p>K-pop 업계 현직 전문가들이 실무 노하우를 전달합니다.</p>
+            </div>
+            <div class="feature">
+                <h3>실습 중심 교육</h3>
+                <p>동아리, 프로젝트, 공연을 통해 현장 경험을 쌓습니다.</p>
+            </div>
+            <div class="feature">
+                <h3>글로벌 네트워크</h3>
+                <p>해외 교류 프로그램과 인턴십으로 국제 무대를 경험합니다.</p>
+            </div>
+        </section>
+    </main>
+
+    <div>
+        <img src="./image/bud.png" id="bu">
+    </div>
+    <!-- 공통 푸터 삽입 -->
+    <div id="footer"></div>
+
+    <!-- jQuery 및 load 실행 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./index.js"></script>
     <script>
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
     </script>
-    <title>K-POP학과</title>
-</head>
-
-<body>
-    <div id="header"></div>
-    
-    <div id="center">
-        <div id="container">
-            <div class="circle"><img src="./image/공민지.webp" id="공민지"></div>
-            <div class="circle"><img src="./image/윤딴딴.webp" id="윤딴딴"></div>
-            <div class="circle"><img src="./image/팔로알토.webp" id="팔로알토"></div>
-            <div class="circle"><img src="./image/이재환.webp" id="이재환"></div>
-        </div>
-        <div>
-            <img src="./image/bud.png" id="bu">
-        </div>
-    </div>
-
-    <div id="footer"></div>
 </body>
 
 </html>
