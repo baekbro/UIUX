@@ -1,0 +1,138 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #f9fbff;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 공통 컨테이너 */
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.1);
+}
+
+.three p{
+    margin-left: 30px;
+}
+/* 제목 스타일 */
+h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #0056b3;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 6px solid #007BFF;
+    padding-left: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #007BFF;
+}
+
+/* 학위 이수 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #f1f7ff;
+    color: #333;
+    border-top: 1px solid #d0e3ff;
+}
+
+/* 주요 과목 테이블 (2번 전용) */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.subject-table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.subject-table td {
+    background-color: #f1f7ff;
+    padding: 14px;
+    border-top: 1px solid #dbe9ff;
+    color: #333;
+}
+
+.subject-table tr:last-child td {
+    border-bottom: 1px solid #dbe9ff;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}
