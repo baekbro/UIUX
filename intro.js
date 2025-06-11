@@ -13,7 +13,6 @@ $(document).ready(function () {
             const id = $img.attr("id");
             const info = singerInfo[id];
 
-            // 스타일 변화 (불투명하게)
             $img.css("opacity", "0.5");
 
             if ($circle.find(".info-text").length === 0) {
@@ -29,10 +28,8 @@ $(document).ready(function () {
             const $circle = $(this);
             const $img = $circle.find("img");
 
-            // 이미지 다시 밝게
             $img.css("opacity", "1");
 
-            // 텍스트 제거
             $circle.find(".info-text").remove();
         }
     );

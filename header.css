@@ -30,6 +30,10 @@ header div span {
     display: inline-block;
 }
 
+header ul li:hover {
+    color: rgb(140, 137, 137);
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -45,11 +49,6 @@ li {
     color: black;
 }
 
-header ul li:hover {
-    color: rgb(140, 137, 137);
-}
-
-/* 모바일 (스마트폰) */
 @media screen and (max-width: 767px) {
     #top-head {
         flex-direction: column;
@@ -90,7 +89,6 @@ header ul li:hover {
     }
 }
 
-/* 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #top-head {
         flex-direction: row;
